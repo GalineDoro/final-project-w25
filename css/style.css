@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  padding-left: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  padding-right: 20px;
+
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.img1 {
+  grid-column: span 3;
+  grid-row: 1;
+  margin-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: "Poppins", serif;
+  font-size: 2.027rem;
+  color: #222;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.802rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  padding-top: 0;
+}
+
+
+h3 {
+  font-size: 1.266rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.Limited {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 0;
+}
+
+.p1 {
+  margin: 0;
+}
+
+.text-content a:link,
+.text-content a:visited {
+  display: inline-block;
+  padding: .3em 1em;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #222;
+  border-radius: 4px;
+
+  margin-top: auto;
+}
+
+.text-content a:hover,
+.text-content a:focus {
+  background-color: #fff;
+  color: #222;
+}
+
+#Comment {
+  background-color: #000;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hh2 {
+
+  color: #fff;
+  font-size: 1.802rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quote {
+  padding-top: 2rem;
+}
+
+.wow {
+  margin-bottom: 2rem;
+}
+
+.background {
+  background-color: #f8fafc;
+  padding-bottom: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f8fafc;
+  border-radius: 1rem;
+}
+
+.product-card img {
+  border-radius: 5% 5% 0 0;
+}
+
+.p2 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: large;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .img1 {
+    grid-column: 2;
+  }
+
+  .grid-paragraph {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .quote-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  body {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 100;
+    padding-left: 40;
+    margin-left: 14rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 14rem;
+  }
+
+  .quote-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    margin-top: 0;
+  }
+
+  .grid-paragraph {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: rem;
+    padding-right: 2rem;
+  }
+
+}
