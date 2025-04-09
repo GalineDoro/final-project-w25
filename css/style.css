@@ -13,14 +13,14 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 p {
   font-size: 0.95rem;
 }
 
-header {
+header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,6 @@ header {
 
 .logo {
   width: 200px;
-  padding-left: 10px;
 }
 
 nav ul {
@@ -44,8 +43,6 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
-  padding-right: 20px;
-
 }
 
 img {
@@ -71,10 +68,9 @@ img {
 }
 
 h1 {
-  font-family: "Poppins", serif;
   font-size: 2.027rem;
   color: #222;
-  font-weight: normal;
+  font-weight: 500;
   margin-top: 0;
 }
 
@@ -94,7 +90,7 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.Limited {
+.limited {
   font-weight: bold;
   text-transform: uppercase;
   color: #222;
@@ -124,27 +120,30 @@ h3 {
   color: #222;
 }
 
-#Comment {
+#comment {
   background-color: #000;
   color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.hh2 {
+#comment h2 {
 
   color: #fff;
   font-size: 1.802rem;
   font-weight: bold;
   text-align: center;
+  margin-top: 0;
 }
 
-.quote {
-  padding-top: 2rem;
+.quote-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
-.wow {
-  margin-bottom: 2rem;
+blockquote {
+  margin-top: 0;
 }
 
 .background {
@@ -204,79 +203,21 @@ footer {
   }
 
   .quote-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+
   }
 
   .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  body {
-    background-color: pink;
   }
 }
 
 @media (min-width: 960px) {
-  body {
-    background-color: lightblue;
-  }
-
   .wrapper-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-  }
-
-
-}
-
-@media (min-width: 1200px) {
-  body {
-    background-color: lightgreen;
-  }
-
-  .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  .logo {
-    width: 100;
-    padding-left: 40;
-    margin-left: 14rem;
-  }
-
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    margin-right: 14rem;
-  }
-
-  .quote-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 2rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
-    margin-top: 0;
-  }
-
-  .grid-paragraph {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-
-  }
-
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: rem;
-    padding-right: 2rem;
   }
 
 }
